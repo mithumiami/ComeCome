@@ -1,24 +1,14 @@
-# README
+#ComeCome
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+##各種CRUD処理
+-ログイン認証
+-新規登録
+-メールアドレス認証
+-住所自動入力
+-画像アップロード、プレビュー
+-タグ機能
+-お問い合わせ機能
+-予約機能
+-現在地、及び登録店舗の住所をピンドロップ表示
+-ゲストログイン機能
+-ajax
