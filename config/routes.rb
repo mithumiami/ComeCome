@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   namespace :admin do
       get 'top' => 'homes#top', as: 'top'
+      resources :users, only: [:index, :show]
+
   end
 
   devise_for :users, skip: [:passwords], controllers: {

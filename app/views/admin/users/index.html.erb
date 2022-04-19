@@ -1,0 +1,26 @@
+<h1 class>User INDEX</h1>
+<table class>
+  <thead class>
+    <tr class>
+      <th class>User Name</th>
+      <th class>email adress</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <div class="user-item">
+          <section class="user-text">
+            <td><%= user.id %></td>
+            <td><%= user.last_name %><%= user.first_name %></td>
+            <td><%= user.email %></td>
+            <td class>
+              <button class><%= link_to "DETAIL", admin_user_path(user.id) %></button>
+            </td>
+          </section>
+        </div>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
