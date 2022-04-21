@@ -1,1 +1,19 @@
 <h1 class><%= @user.first_name %>'s Information</h1>
+
+<table class>
+  <tbody class>
+    <tr>
+      <th>Name</th>
+      <th>
+        <div class><%= @user.last_name %><%= @user.first_name %></div>
+      </th>
+    </tr>
+
+    <tr>
+      <th>email</th>
+      <th>
+        <div class><%= @user.email %></div>
+      </th>
+    </tr>
+  </tbody>
+</table>
