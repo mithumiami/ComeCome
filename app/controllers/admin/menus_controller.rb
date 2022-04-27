@@ -10,14 +10,14 @@ class Admin::MenusController < ApplicationController
 
  def create
     menu = Menu.new(menu_params)
-    menu.save
+    menu.save!
     redirect_to admin_menus_path
  end
 
 private
 
   def menu_params
-    params.permit(:title, :caption, :price)
+    params.require(:menu).permit(:title, :caption, :price)
   end
 
 end

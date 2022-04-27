@@ -1,32 +1,20 @@
 <h1 class>MENU INDEX</h1>
 
-<%= form_with model: @menu, url:'/admin/menus', local:true do |f| %>
-
-<h4 class>title</h4>
-<%= f.text_field :title %>
-
-<h4 class>caption</h4>
-<%= f.text_area :caption %>
-
-<h4 class>price</h4>
-<%= f.number_field :price %>
-
-<%= f.submit 'Create Menu' %>
-<% end %>
-
  <% @menus.each do |menu| %>
       <tr>
         <div class="menu-item">
           <section class="menu-text">
             <td class><%= menu.id %></td>
-            <td class><%= menu.title %>\</td>
+            <td class><%= menu.title %></td>
             <td class><%= menu.caption %></td>
-            <td class><%= menu.price %></td>
+            <td class>￥<%= menu.price %></td>
             <td class>
-              <button class><%#= link_to "DETAIL", admin_user_path(user.id) %></button>
+              <button class><%= link_to "DETAIL", admin_menu_path(menu.id) %></button>
             </td>
           </section>
         </div>
       </tr>
     <% end %>
+
+  <h3>ここに入るはず</h3>
 <button class>NEW</button>

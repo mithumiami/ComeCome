@@ -1,0 +1,16 @@
+<div class>
+  <%= form_with model: @menu, url:'/admin/menus', local:true do |f| %>
+
+    <h4 class>title</h4>
+    <%= f.text_field :title %>
+
+    <h4 class>caption</h4>
+    <%= f.text_area :caption %>
+
+    <h4 class>price</h4>
+    <%= f.text_field :price %>
+
+    <%= f.submit 'Create Menu' %>
+  <% end %>
+
+</div>
