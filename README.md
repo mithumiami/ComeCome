@@ -12,3 +12,8 @@
 - 現在地、及び登録店舗の住所をピンドロップ表示
 - ゲストログイン機能
 - ajax
+
+
+## テーブル定義書
+- ## 各種CRUD処理
+- https://docs.google.com/spreadsheets/d/1dJD9fJRJ91L_S01j3VAVvOdGEcCnWP2CjVjUurAYfKo/edit#gid=84123752

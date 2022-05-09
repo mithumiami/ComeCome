@@ -4,6 +4,10 @@ class Admin::MenusController < ApplicationController
     @menus = Menu.all
   end
 
+  def show
+   @menu = Menu.find(params[:id])
+  end
+
   def new
     @menu = Menu.new
   end
