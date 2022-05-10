@@ -6,8 +6,6 @@
 - メールアドレス認証
 - 住所自動入力
 - 画像アップロード、プレビュー
-- タグ機能
-- お問い合わせ機能
 - 予約機能
 - 現在地、及び登録店舗の住所をピンドロップ表示
 - ゲストログイン機能
@@ -16,3 +14,6 @@
 
 ## テーブル定義書
 - https://docs.google.com/spreadsheets/d/1dJD9fJRJ91L_S01j3VAVvOdGEcCnWP2CjVjUurAYfKo/edit#gid=84123752
+
+## アプリケーション詳細設計書
+- https://docs.google.com/spreadsheets/d/1UIUiUaNcLnCEoWRCN3yQXWulOPIke3bw/edit?usp=sharing&ouid=105209126744044475093&rtpof=true&sd=true
