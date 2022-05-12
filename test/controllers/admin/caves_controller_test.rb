@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class Admin::CafesControllerTest < ActionDispatch::IntegrationTest
+class Admin::CavesControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
