@@ -1,0 +1,20 @@
+<h1 class>CAFE INDEX</h1>
+
+ <% @caves.each do |cafe| %>
+      <tr>
+        <div class="cafe-item">
+          <section class="cafe-text">
+            <td class><%= cafe.id %></td>
+            <td class><%= cafe.title %></td>
+            <td class><%= cafe.caption %></td>
+            <td class>￥<%= cafe.price %></td>
+            <td class>
+              <button class><%#= link_to "DETAIL", admin_menu_path(menu.id) %></button>
+            </td>
+          </section>
+        </div>
+      </tr>
+    <% end %>
+
+  <h3>ここに入るはず</h3>
+<button class>NEW</button>

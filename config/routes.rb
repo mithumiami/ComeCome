@@ -9,6 +9,8 @@ Rails.application.routes.draw do
       get 'top' => 'homes#top', as: 'top'
       resources :users, only: [:index, :show]
       resources :menus, only: [:index, :show, :new, :create]
+      resources :caves, only: [:index, :show, :new, :create]
+
 
   end
 
