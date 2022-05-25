@@ -17,10 +17,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  color: black
 }
+
 
 body {
 font-family: 'Courier','Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック',Courier;
+}
+
+header {
+  width: 90%;
+  padding: 15px 0;
+  margin: 0 auto;
 }
 
 .top-headline {
@@ -34,6 +43,21 @@ font-family: 'Courier','Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角�
   padding: 10px 0;
   margin: 0 auto;
 }
+
+
+.btn-border {
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+}
+
+.btn-border:hover {
+  color: #fff;
+  background: #000;
+}
+
+
+
 
 @media screen and (max-width: 425px) {
   .top-headline {
