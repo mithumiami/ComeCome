@@ -1,5 +1,17 @@
-<h1>User Info</h1>
+<div class>
+  <h1 class>User Info</h1>
+</div>
 
-<div class><%= @user.first_name %><%= @user.last_name %></div>
+<table class="table table-striped">
 
-<div class><%= @user.email %></div>
+  <tr>
+    <th>name</th>
+    <th><%= @user.first_name %><%= @user.last_name %></th>
+  </tr>
+
+  <tr>
+    <th>email</th>
+    <th><%= @user.email %></th>
+  </tr>
+
+</table>
