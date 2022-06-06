@@ -8,8 +8,8 @@
             <td class><%= menu.title %></td>
             <td class><%= menu.caption %></td>
             <td class>￥<%= menu.price %></td>
-            <td class>
-              <button class><%= link_to "DETAIL", admin_menu_path(menu.id) %></button>
+            <td>
+              <%= link_to "DETAIL", admin_menu_path(menu.id), class: 'btn btn-outline-info' %>
             </td>
           </section>
         </div>
@@ -17,4 +17,4 @@
     <% end %>
 
   <h3>ここに入るはず</h3>
-<button class><%= link_to "NEW", new_admein_menu_path %></button>
+  <td><%= link_to "NEW", new_admin_menu_path, class: 'btn btn-outline-primary' %></button>
