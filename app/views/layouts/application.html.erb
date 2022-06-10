@@ -12,22 +12,16 @@
   <body>
     <header>
      <% if user_signed_in? %>
-      <li>
-        <%= link_to "Log out", destroy_user_session_path, method: :delete %>
-      </li>
-      <li>
-        <%= link_to 'My Page', user_path(current_user.id) %>
-      </li>
-      <li>
-        <%= link_to 'Cafe', user_path(current_user.id) %>
-      </li>
+      <div>
+        <%= link_to "Log out", destroy_user_session_path, method: :delete, class: 'btn btn-outline-dark' %>
+        <%= link_to 'My Page', user_path(current_user.id), class: 'btn btn-outline-dark' %>
+        <%= link_to 'Cafe', user_path(current_user.id), class: 'btn btn-outline-dark' %>
+      </div>
     <% else %>
-      <span class="btn btn-border">
-        <%= link_to "Sign up", new_user_registration_path %>
-      </span>
-      <span class="btn btn-border">
-        <%= link_to "Log in", new_user_session_path %>
-      </span>
+      <div>
+        <%= link_to "Sign up", new_user_registration_path, class: 'btn btn-outline-dark' %>
+        <%= link_to "Log in", new_user_session_path, class: 'btn btn-outline-dark' %>
+      </div>
     <% end %>
     <%= yield %>
     </header>
