@@ -1,19 +1,29 @@
 <h1 class>CAFE INDEX</h1>
 
- <% @caves.each do |cafe| %>
-      <tr>
-        <div class="cafe-item">
-          <section class="cafe-text">
-            <td class><%= cafe.id %></td>
-            <td class><%= cafe.name %></td>
-            <td class><%= cafe.email %></td>
-            <td class>
-              <button class><%#= link_to "DETAIL", admin_cafe_path(menu.id) %></button>
-            </td>
-          </section>
-        </div>
-      </tr>
-    <% end %>
+    <table>
+
+      <tbody>
+         <% @caves.each do |cafe| %>
+              <tr>
+                <th>ID</th>
+                <td><%= cafe.id %></td>
+              </tr>
+
+              <tr>
+                <th>Name</th>
+                <td><%= cafe.name %></td>
+              </tr>
+
+              <tr>
+                <th>Email</th>
+                <td><%= cafe.email %></td>
+              </tr>
+      </tbody>
+    </table>
+              <div><%= link_to "DETAIL", admin_cafe_path(cafe.id), class: 'class btn btn-outline-info' %></div>
+
+            <% end %>
+
 
   <h3>ここに入るはず</h3>
-<button class><%= link_to "ADD CAFE", new_admin_cafe_path %></button>
+<div><%= link_to "ADD CAFE", new_admin_cafe_path, class: 'btn btn-outline-primary' %></div>

@@ -1,0 +1,41 @@
+<h1>CAFE INFORMATION</h1>
+    <table class="table table-striped">
+
+      <tbody>
+
+              <tr>
+                <th>ID</th>
+                <td><%= @cafe.id %></td>
+              </tr>
+
+              <tr>
+                <th>NAME</th>
+                <td><%= @cafe.name %></td>
+              </tr>
+
+              <tr>
+                <th>EMAIL</th>
+                <td><%= @cafe.email %></td>
+              </tr>
+
+
+              <tr>
+                <th>PHONE NUMBER</th>
+                <td><%= @cafe.phone_number %></td>
+              </tr>
+
+
+              <tr>
+                <th>URL</th>
+                <td><%= @cafe.url %></td>
+              </tr>
+
+
+              <tr>
+                <th>CAPTION</th>
+                <td><%= @cafe.caption %></td>
+              </tr>
+      </tbody>
+    </table>
+
+    <div><%= link_to "Back",admin_caves_path, class: 'btn btn-outline-secondary'%>
