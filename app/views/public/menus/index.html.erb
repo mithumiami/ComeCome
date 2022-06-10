@@ -1,0 +1,18 @@
+<h1 class>MENUS</h1>
+
+<h6>You can enjoy deshes of Portugal!</h6>
+
+ <% @menus.each do |menu| %>
+      <tr>
+        <div class="menu-item">
+          <section class="menu-text">
+            <td class><%= menu.title %></td>
+            <td class>￥<%= menu.price %></td>
+            <td>
+              <%= link_to "DETAIL", menu_path(menu.id), class: 'btn btn-outline-info' %>
+            </td>
+          </section>
+        </div>
+      </tr>
+    <% end %>
+
